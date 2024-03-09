@@ -1,6 +1,6 @@
-const path = require('path');
+const path = require("path");
 
 module.exports = {
-    firebaseKey: path.join(__dirname, '../../serviceAccountKey.json'),
-    lastSyncFilename: path.join(__dirname, '../../lastSyncDate.txt'),
+  firebaseKey: path.join(__dirname, "../../serviceAccountKey.json"),
+  lastSyncFilename: path.join(__dirname, "../../lastSyncDate.txt"),
 };

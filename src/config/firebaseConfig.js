@@ -1,8 +1,8 @@
-const admin = require('firebase-admin');
-const { firebaseKey } = require('./index');
+const admin = require("firebase-admin");
+const { firebaseKey } = require("./index");
 
 admin.initializeApp({
-    credential: admin.credential.cert(require(firebaseKey)),
+  credential: admin.credential.cert(require(firebaseKey)),
 });
 
 const db = admin.firestore();
