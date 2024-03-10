@@ -1,4 +1,4 @@
-const { db, admin } = require("../config/firebaseConfig");
+const { db } = require("../config/firebaseConfig");
 
 async function createPerformance(performanceInfo) {
   try {
