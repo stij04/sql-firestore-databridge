@@ -19,9 +19,7 @@ async function transferSeasons() {
         SezStart: season.SezStart,
         SezKonec: season.SezKonec,
         SezSkryto: season.SezSkryto,
-        SezVytvoril: season.SezVytvoril,
         SezVytvoreno: season.SezVytvoreno,
-        SezUpravil: season.SezUpravil,
         SezUpraveno: season.SezUpraveno,
       });
     }

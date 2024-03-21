@@ -20,9 +20,7 @@ async function transferLevels() {
         UroPopis: level.UroPopis,
         UroHranice: level.UroHranice,
         UroMena: level.UroMena,
-        UroVytvoril: level.UroVytvoril,
         UroVytvoreno: level.UroVytvoreno,
-        UroUpravil: level.UroUpravil,
         UroUpraveno: level.UroUpraveno,
       });
     }

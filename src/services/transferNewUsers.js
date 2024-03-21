@@ -1,6 +1,5 @@
 const { getNewUsers } = require("../sql/getNewUsers");
 const { createNewUser } = require("../firestore/createNewUser");
-const admin = require("firebase-admin");
 
 const TEST_MODE = true;
 
@@ -18,7 +17,6 @@ async function transferNewUsers() {
         .replace(/\p{Diacritic}/gu, "")
         .concat("@example.com");
       const userPassword = user.UziPin.toString();
-      const userCreatedTime = admin.firestore.Timestamp.fromDate(new Date());
 
       await createNewUser(userEmail, userPassword, {
         email: userEmail,
@@ -30,7 +28,8 @@ async function transferNewUsers() {
         photo_url: user.UziAvatar,
         UziBody: user.UziBody,
         UziMena: user.UziMena,
-        created_time: userCreatedTime,
+        created_time: user.UziVytvoreno,
+        UziUpraveno: user.UziUpraveno,
       });
     }
 

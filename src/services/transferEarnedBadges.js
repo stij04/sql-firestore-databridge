@@ -14,11 +14,9 @@ async function transferEarnedBadges() {
 
       await createEarnedBadge({
         ZioId: earnedBadge.ZioId,
-        ZioOceId: earnedBadge.ZioOceId,
         ZioUziId: earnedBadge.ZioUziId,
-        ZioVytvoril: earnedBadge.ZioVytvoril,
+        ZioOceId: earnedBadge.ZioOceId,
         ZioVytvoreno: earnedBadge.ZioVytvoreno,
-        ZioUpravil: earnedBadge.ZioUpravil,
         ZioUpraveno: earnedBadge.ZioUpraveno,
       });
     }

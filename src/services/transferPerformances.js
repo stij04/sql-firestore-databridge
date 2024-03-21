@@ -14,20 +14,15 @@ async function transferPerformances() {
 
       await createPerformance({
         VykId: performance.VykId,
-        VykDatum: performance.VykDatum,
         VykUziId: performance.VykUziId,
-        VykPozId: performance.VykPozId,
         VykSezId: performance.VykSezId,
+        VykDatum: performance.VykDatum,
         VykKusy: performance.VykKusy,
         VykKilogramy: performance.VykKilogramy,
         VykBody: performance.VykBody,
         VykKoef: performance.VykKoef,
         VykKoefVaha: performance.VykKoefVaha,
-        VykPoznamka: performance.VykPoznamka,
-        VykOprava: performance.VykOprava,
-        VykVytvoril: performance.VykVytvoril,
         VykVytvoreno: performance.VykVytvoreno,
-        VykUpravil: performance.VykUpravil,
         VykUpraveno: performance.VykUpraveno,
       });
     }

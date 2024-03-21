@@ -14,16 +14,12 @@ async function transferBadges() {
 
       await createBadge({
         OceId: badge.OceId,
-        OceTyoId: badge.OceTyoId,
         OceNazev: badge.OceNazev,
         OcePopis: badge.OcePopis,
-        OcePodminky: badge.OcePodminky,
         OceMena: badge.OceMena,
         OceObrazek: badge.OceObrazek,
         OceSkryto: badge.OceSkryto,
-        OceVytvoril: badge.OceVytvoril,
         OceVytvoreno: badge.OceVytvoreno,
-        OceUpravil: badge.OceUpravil,
         OceUpraveno: badge.OceUpraveno,
       });
     }

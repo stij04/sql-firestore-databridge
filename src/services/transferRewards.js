@@ -19,9 +19,7 @@ async function transferRewards() {
         OdmCena: reward.OdmCena,
         OdmObrazek: reward.OdmObrazek,
         OdmSkryto: reward.OdmSkryto,
-        OdmVytvoril: reward.OdmVytvoril,
         OdmVytvoreno: reward.OdmVytvoreno,
-        OdmUpravil: reward.OdmUpravil,
         OdmUpraveno: reward.OdmUpraveno,
       });
     }
