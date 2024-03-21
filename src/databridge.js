@@ -6,6 +6,7 @@ const { transferRewards } = require("./services/transferRewards");
 const { transferLevels } = require("./services/transferLevels");
 const { transferSeasons } = require("./services/transferSeasons");
 const { transferNotifications } = require("./services/transferNotifications");
+const { transferEarnedLevels } = require("./services/transferEarnedLevels");
 
 const TRANSFER_USERS = false;
 const TRANSFER_PERFORMANCES = false;
@@ -15,6 +16,7 @@ const TRANSFER_REWARDS = false;
 const TRANSFER_LEVELS = false;
 const TRANSFER_SEASONS = false;
 const TRANSFER_NOTIFICATIONS = false;
+const TRANSFER_EARNED_LEVELS = false;
 
 async function transferData() {
   try {
@@ -48,6 +50,10 @@ async function transferData() {
 
     if (TRANSFER_NOTIFICATIONS) {
       await transferNotifications();
+    }
+
+    if (TRANSFER_EARNED_LEVELS) {
+      await transferEarnedLevels();
     }
 
     console.log("Data transfer complete.");
